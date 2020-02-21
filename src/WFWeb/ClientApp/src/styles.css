@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+button {
+  white-space: nowrap;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: 10px;
+}
+
+.grid-container > div {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+}

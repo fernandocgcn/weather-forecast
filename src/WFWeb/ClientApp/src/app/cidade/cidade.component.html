@@ -1,0 +1,13 @@
+<form>
+  <mat-form-field>
+    <mat-label>Entre com o nome da cidade (sem acentos):</mat-label>
+    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let cidade of cidades" [value]="cidade"
+                  (onSelectionChange)="updatePrevisaoForm(cidade)">
+        <span>{{ cidade.nome }}</span>
+        <small> | UF: {{ cidade.uf }} | /previsaotempo/{{ cidade.id }}</small>
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

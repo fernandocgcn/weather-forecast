@@ -1,0 +1,25 @@
+<div *ngIf="previsaoCidade">
+  <h3>Previsão do Tempo para {{ previsaoCidade.nome }}</h3>
+  <p>UF: {{ previsaoCidade.uf }}</p>
+  <p>Data de Consulta: {{ previsaoCidade.dataAtualizacao | date:'dd/MM/yyyy' }}</p>
+  <table mat-table [dataSource]="previsaoCidade.previsoes" class="mat-elevation-z8">
+    <ng-container matColumnDef="dataDia">
+      <th mat-header-cell *matHeaderCellDef>Data</th>
+      <td mat-cell *matCellDef="let element">{{ element.dataDia | date:'dd/MM/yyyy' }}</td>
+    </ng-container>
+    <ng-container matColumnDef="tempo">
+      <th mat-header-cell *matHeaderCellDef>Tempo</th>
+      <td mat-cell *matCellDef="let element">{{ element.condicaoTempo.descricao }}</td>
+    </ng-container>
+    <ng-container matColumnDef="maxima">
+      <th mat-header-cell *matHeaderCellDef>Máxima</th>
+      <td mat-cell *matCellDef="let element">{{ element.maxima }}°</td>
+    </ng-container>
+    <ng-container matColumnDef="minima">
+      <th mat-header-cell *matHeaderCellDef>Mínima</th>
+      <td mat-cell *matCellDef="let element">{{ element.minima }}°</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

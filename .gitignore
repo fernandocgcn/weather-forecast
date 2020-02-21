@@ -1,0 +1,9 @@
+
+src/.vs
+misc/ComponentDiagram.drawio
+misc/Orientacoes_prova_pratica.pdf
+src/WFDomain/bin
+src/WFDomain/obj
+src/WFWeb/bin
+src/WFWeb/obj
+src/WFWeb/ClientApp/package-lock.json

@@ -1,0 +1,15 @@
+<body>
+  <h1>{{ title }}</h1>
+  <div class="grid-container">
+    <div>
+      <mat-card>
+        <cidade (cidade)="previsao.updateCidade($event)"></cidade>
+      </mat-card>
+    </div>
+    <div>
+      <mat-card>
+        <previsao #previsao></previsao>
+      </mat-card>
+    </div>
+  </div>
+</body>

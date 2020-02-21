@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WFDomain.Models.Cidade">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Cidade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WFDomain.Models.Cidades">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Cidades.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListaCidade" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WFDomain.Models.PrevisaoCidade">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAgAAAAAAAAAACAAAAEAAAQ=</HashCode>
+      <FileName>Models\PrevisaoCidade.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Previsoes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="WFDomain.Models.Previsao">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAgAAAABAAAEAAAQAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Models\Previsao.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CondicaoTempo" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="WFDomain.Models.CondicaoTempo">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAgAAAAAAAAAgAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CondicaoTempo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
